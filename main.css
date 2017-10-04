@@ -1,0 +1,71 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+
+.gamecontanier{
+ width: 560px;
+ height: 560px;
+ box-shadow: 0 0  3px;
+ margin: 40px auto;
+}
+
+
+
+
+.box{
+	width: 70px;
+	height: 70px;
+	float:left;
+	border:1px solid silver;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+
+.front{
+	width: 70px;
+	height: 70px;
+	background: cadetblue;
+	position: absolute; 
+	font-size: 0px;
+	text-align: center;
+	line-height: 60px;
+	transition:transform 1s;
+    backface-visibility: hidden;
+}
+
+.back{
+	width: 70px;
+	height: 70px;
+	background: tomato;
+	position: absolute; 
+	transform: perspective(900px) rotateY(180deg);
+    transition: transform 1s;   
+    font-size: 50px;
+	text-align: center;
+	line-height: 60px;
+}
+
+#timer{
+   
+   font-size: 30px;
+   text-align: center;
+}
+#addtimer{
+   
+   font-size: 30px;
+   text-align: center;
+}
+
+
+/*.box:hover > .front{
+   transform:perspective(900px) rotateY(180deg) ;
+   
+
+}*/
+/*.box:hover > .back{
+   transform:perspective(900px) rotateY(0deg) ;
+}*/
